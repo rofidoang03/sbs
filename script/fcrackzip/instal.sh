@@ -33,17 +33,19 @@ function instal_depedensi(){
         apt-get install wget
         echo "[+] ${depedensi} berhasil diinstal."
         sleep 1
-      done
+    done
 
-      echo ""
-      echo "[info] Semua depedensi yang diperlukan berhasil diinstal."
-      sleep 1
-      echo "[info] Fcrackzip berhasil diinstal."
-      sleep 1
-      echo "[info] Untuk menjalankan ketikkan perintah ./fcrackzip.sh"
-      sleep 1
-      echo ""
-      exit 0
+    chmod +x fcrackzip.sh
+
+    echo ""
+    echo "[info] Semua depedensi yang diperlukan berhasil diinstal."
+    sleep 1
+    echo "[info] Fcrackzip berhasil diinstal."
+    sleep 1
+    echo "[info] Untuk menjalankan ketikkan perintah ./fcrackzip.sh"
+    sleep 1
+    echo ""
+    exit 0
 }
 
 function instal_fcrackzip(){
