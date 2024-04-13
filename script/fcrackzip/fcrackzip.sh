@@ -83,8 +83,10 @@ function crack_the_password(){
 		echo "[info] Proses cracking selesai."
 		sleep 1
 		read -p "[info] Tekan Enter untuk melanjutkan..."
+                exit 0
 	elif [[ "${nanya}" == "tidak" ]]; then
 		echo "[-] Proses cracking dibatalkan."
+                exit 1
 	else
 		echo "[-] Masukkan salah."
 		crack_the_password
