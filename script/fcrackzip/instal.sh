@@ -54,3 +54,5 @@ function instal_fcrackzip(){
         instal_fcrackzip
     fi
 }
+
+instal_fcrackzip
