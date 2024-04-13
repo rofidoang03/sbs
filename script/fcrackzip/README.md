@@ -12,4 +12,4 @@ sudo apt-get update ; sudo apt-get install fcrackzip ; sudo apt-get install wget
 
 ## Screenshot 
 
-![](https://github.com/rofidoang03/sbs/blob/main/script/fcrackzip/fcrackzip.jpg)
+![](https://github.com/rofidoang03/sbs/blob/main/script/fcrackzip/img/fcrackzip.jpg)
