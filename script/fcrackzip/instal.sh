@@ -1,4 +1,8 @@
 #!/bin/bash
+# ------------------------------------------------------
+# ------- Script untuk menginstal alat Fcrackzip -------
+# ------- Pembuat : Rofidoang03 ------------------------
+# ------------------------------------------------------
 
 function cek_koneksi_internet(){
     if ping -q -c 1 -W 1 google.com >/dev/null; then
@@ -19,7 +23,8 @@ function instal_depedensi(){
     )
 
     echo ""
-    echo "[*] Menginstal depedensi yang diperlukan..."
+    echo "[*] Menginstal depedensi yang diperlukan."
+    echo "-----------------------------------------"
     sleep 3
   
     for depedensi in "${daftar_depedensi[@]}"; do
