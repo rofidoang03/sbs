@@ -36,6 +36,7 @@ function cek_koneksi_internet(){
 function instal_depedensi(){
     daftar_depedensi=(
         "fcrackzip"
+        "fcrackzip"
     )
 
     echo -e "${b}[*] ${p}Menginstal depedensi yang diperlukan.${r}"
