@@ -1,10 +1,10 @@
 #!/bin/bash
 # ------------------------------------------------------------
-# + Nama Alat      : Fcrackzip
-# + Deskripsi Alat : Fcrackzip adalah alat yang digunakan untuk
-#                  membuka (crack) file zip yang terenkripsi
-#                  dengan kata sandi.
-# + Pembuat        : Rofidoang03
+# + Alat      : Fcrackzip
+# + Deskripsi : Fcrackzip adalah alat yang digunakan untuk
+#               membuka (crack) file zip yang terenkripsi
+#               dengan kata sandi.
+# + Pembuat   : Rofidoang03
 # ------------------------------------------------------------
 # + Github         : https://github.com/rofidoang03/sbs
 # ------------------------------------------------------------
