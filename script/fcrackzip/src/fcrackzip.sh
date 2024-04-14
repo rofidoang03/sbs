@@ -30,6 +30,8 @@ function cek_alat(){
 	fi
 }
 
+
+# fungsi banner 
 function banner(){
 
 	echo -e ""
