@@ -44,11 +44,11 @@ function banner(){
  	echo -e "${r}"
 }
 
+# memanggil fungsi banner
+	banner
+
 # fungsi untuk memilih file zip yang akan di crack
 function pilih_file_zip(){
-
-	# memanggil fungsi banner
-	banner
  
 	read -p $'\e[1;37mMasukkan nama file zip: ' file_zip
 	if [[ ! -f "${file_zip}" ]]; then
