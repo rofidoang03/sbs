@@ -17,9 +17,6 @@ p="\e[1;37m" # putih terang
 c="\e[1;36m" # cyan terang
 r="\e[;0m"   # reset
 
-# membersihkan layar terminal
-clear
-
 # fungsi mengecek apakah alat fcrackzip sudah terinstal apa belum
 function cek_alat(){
 	if ! command -v fcrackzip >> /dev/null 2>&1; then
@@ -30,8 +27,30 @@ function cek_alat(){
 	fi
 }
 
+function banner(){
+
+
+	# membersihkan layar terminal
+	clear
+
+	echo -e ""
+	echo -e "${p}[--------------------------------------------------------------]"
+    	echo -e "${p}[${c}--${p}]--------------------------------------------------------[${c}--${p}]${r}"
+    	echo -e "${p}[${c}--${p}]                      Fcrackzip                         [${c}--${p}]${r}"
+	echo -e "${p}[${c}--${p}]              ${c}Dibuat oleh: ${m}Rofi (Fixploit)              ${p}[${c}--${p}]${r}"
+	echo -e "${p}[${c}--${p}]                      ${c}Version: ${m}1.0                      ${p}[${c}--${p}]${r}"
+	echo -e "${p}[${c}--${p}]  ${c}Ikuti Saya di Github: ${m}https://github.com/rofidoang03  ${p}[${c}--${p}]${r}"
+	echo -e "${p}[${c}--${p}]--------------------------------------------------------[${c}--${p}]${r}"
+	echo -e "${p}[--------------------------------------------------------------]"
+ 	echo -e "${r}"
+}
+
 # fungsi untuk memilih file zip yang akan di crack
 function pilih_file_zip(){
+
+	# memanggil fungsi banner
+	banner
+ 
 	read -p $'\e[1;37mMasukkan nama file zip: ' file_zip
 	if [[ ! -f "${file_zip}" ]]; then
 		sleep 1
