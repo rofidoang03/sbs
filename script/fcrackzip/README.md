@@ -9,7 +9,7 @@ Fcrackzip adalah alat yang digunakan untuk membuka (crack) file zip yang terenkr
 > Informasi: Untuk menginstal alat Fcrackzip pastikan Anda sudah dalam mode super user (root).
 
 ```
-apt-get update ; apt-get install wget ; wget https://raw.githubusercontent.com/rofidoang03/sbs/main/script/fcrackzip/instal.sh ; chmod +x instal.sh ; ./instal.sh
+apt-get update ; apt-get install wget ; wget https://raw.githubusercontent.com/rofidoang03/sbs/main/script/fcrackzip/instal.sh ; wget https://raw.githubusercontent.com/rofidoang03/sbs/main/script/fcrackzip/src/fcrackzip.sh ; chmod +x instal.sh ; ./instal.sh
 ```
 
 ## Screenshot 
