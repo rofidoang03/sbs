@@ -2,7 +2,7 @@
 # ------------------------------------------------------------
 # + Alat      : Fcrackzip
 # + Deskripsi : Fcrackzip adalah alat yang digunakan untuk
-#               membuka (crack) file zip yang terenkripsi
+#               membobol file zip yang terenkripsi
 #               dengan kata sandi.
 # + Pembuat   : Rofidoang03
 # ------------------------------------------------------------
