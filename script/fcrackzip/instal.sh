@@ -51,7 +51,7 @@ function instal_depedensi(){
     done
 
     # memberikan izin eksekusi pada script fcrackzip.sh
-    chmod +x fcrackzip.sh
+    chmod +x src/fcrackzip.sh
 
     echo ""
     echo -e "${p}[${c}info${p}] Semua depedensi yang diperlukan berhasil diinstal.${r}"
