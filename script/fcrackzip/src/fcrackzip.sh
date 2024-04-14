@@ -72,7 +72,7 @@ function pilih_file_wordlist(){
 		sleep 1
 		echo -e "${b}[*] ${p}Menghitung jumlah password${r}"
 		sleep 3
-		echo -e "${h}[+] ${p}Jumlah password yang ingin dicoba: ${jumlah_password} password${r}"
+		echo -e "${h}[+] ${p}Jumlah password yang ingin dicoba: ${jumlah_password}${r}"
 		echo ""
 	
 		crack_the_password
