@@ -52,15 +52,12 @@ function pilih_file_zip(){
  
 	read -p $'\e[1;37mMasukkan nama file zip: ' file_zip
 	if [[ ! -f "${file_zip}" ]]; then
-		sleep 1
 		echo -e "${m}[-] ${p}File '${m}${file_zip}${p}' tidak ditemukan.${r}"
 		pilih_file_zip
 	elif [[ -f "${file_zip}" && "${file_zip##*.}" != "zip" ]]; then
-		sleep 1
 		echo -e "${m}[-] ${p}File '${m}${file_zip}${p}' bukan file zip.${r}"
 		pilih_file_zip
 	else
-		sleep 1
 		echo -e "${h}[+] ${p}File zip '${h}${file_zip}${p}' ditemukan.${r}"
 		pilih_file_wordlist
 	fi
@@ -70,11 +67,9 @@ function pilih_file_zip(){
 function pilih_file_wordlist(){
 	read -p $'\e[1;37mMasukkan nama file wordlist: ' file_wordlist
 	if [[ ! -f "${file_wordlist}" ]]; then
-		sleep 1
 		echo -e "${m}[-] ${p}File wordlist '${m}${file_wordlist}${p}' tidak ditemukan.${r}"
 		pilih_file_wordlist
 	else
-		sleep 1
 		echo -e "${h}[+] ${p}File wordlist '${h}${file_wordlist}${p}' ditemukan.${r}"
 
 		# jumlah password yang terdapat dalam file wordlist.
@@ -83,13 +78,9 @@ function pilih_file_wordlist(){
 		echo ""
 		echo -e "${p}[${c}info${p}] Daftar informasi proses cracking${r}"
 		echo ""
-		sleep 1
 		echo -e "${h}[+] ${p}File zip: ${file_zip}${r}"
-		sleep 1
 		echo -e "${h}[+] ${p}File wordlist: ${file_wordlist}${r}"
-		sleep 1
 		echo -e "${b}[*] ${p}Menghitung jumlah password${r}"
-		sleep 3
 		echo -e "${h}[+] ${p}Jumlah password yang ingin dicoba: ${jumlah_password}${r}"
 		echo ""
 	
@@ -104,11 +95,9 @@ function crack_the_password(){
 		echo ""
 		echo -e "${b}[*] ${p}Menjalankan alat Fcrackzip...${r}"
   		echo ""
-		sleep 3
 		fcrackzip -v -u -D -p "${file_wordlist}" "${file_zip}"
 		echo ""
 		echo -e "${p}[${c}info${p}] Proses cracking selesai.${r}"
-		sleep 1
 		read -p $'\e[1;37m[\e[1;36minfo\e[1;37m] Tekan Enter untuk melanjutkan...\e[0m'
                 exit 0
 	elif [[ "${nanya}" == "tidak" ]]; then
