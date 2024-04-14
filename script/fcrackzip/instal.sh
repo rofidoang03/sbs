@@ -1,8 +1,12 @@
 #!/bin/bash
-# ------------------------------------------------------
-# ------- Script untuk menginstal alat Fcrackzip -------
-# ------- Pembuat : Rofidoang03 ------------------------
-# ------------------------------------------------------
+# ---------------------------------------------------------------
+# + Script      : instal.sh
+# + Deskripsi   : instal.sh adalah script bash untuk menginstal 
+#               : alat Fcrackzip secara otomatis.
+# + Pembuat     : Rofidoang03
+# ---------------------------------------------------------------
+# + Github      : https://github.com/rofidoang03/sbs
+# ---------------------------------------------------------------
 
 function cek_koneksi_internet(){
     if ping -q -c 1 -W 1 google.com >/dev/null; then
