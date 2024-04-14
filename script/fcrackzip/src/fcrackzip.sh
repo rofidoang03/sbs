@@ -6,7 +6,7 @@
 #               dengan kata sandi.
 # + Pembuat   : Rofidoang03
 # ------------------------------------------------------------
-# + Github         : https://github.com/rofidoang03/sbs
+# + Github    : https://github.com/rofidoang03/sbs
 # ------------------------------------------------------------
 
 # variabel warna 
