@@ -17,6 +17,9 @@ p="\e[1;37m" # putih terang
 c="\e[1;36m" # cyan terang
 r="\e[;0m"   # reset
 
+# membersihkan layar terminal
+	clear
+
 # fungsi mengecek apakah alat fcrackzip sudah terinstal apa belum
 function cek_alat(){
 	if ! command -v fcrackzip >> /dev/null 2>&1; then
@@ -28,10 +31,6 @@ function cek_alat(){
 }
 
 function banner(){
-
-
-	# membersihkan layar terminal
-	clear
 
 	echo -e ""
 	echo -e "${p}[--------------------------------------------------------------]"
