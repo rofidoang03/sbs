@@ -26,7 +26,7 @@ function cek_koneksi_internet(){
     else
         echo -e "${m}[-] ${p}Anda tidak memiliki koneksi internet.${r}"
         sleep 1
-        echo -r "${p}[${c}info${p}] Pastikan Anda memiliki koneksi internet untuk menginstal alat Fcrackzip.${r}"
+        echo -e "${p}[${c}info${p}] Pastikan Anda memiliki koneksi internet untuk menginstal alat Fcrackzip.${r}"
         exit 1
     fi
 }
