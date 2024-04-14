@@ -33,7 +33,6 @@ function cek_koneksi_internet(){
 
 function instal_depedensi(){
     daftar_depedensi=(
-        "wget"
         "fcrackzip"
     )
 
@@ -43,7 +42,7 @@ function instal_depedensi(){
     for depedensi in "${daftar_depedensi[@]}"; do
         echo -e "${b}[*] ${p}Menginstal ${depedensi}...${r}"
         sleep 3
-        apt-get install wget
+        apt-get install "${depedensi}"
         echo -e "${h}[+] ${p}${depedensi} berhasil diinstal.${r}"
         sleep 1
     done
@@ -55,7 +54,7 @@ function instal_depedensi(){
     sleep 1
     echo -e "${p}[${c}info${p}] Fcrackzip berhasil diinstal.${r}"
     sleep 1
-    echo -e "${p}[${c}info${p}] Untuk menjalankan ketikkan perintah ./fcrackzip.sh${r}"
+    echo -e "${p}[${c}info${p}] Untuk menjalankan ketikkan perintah ${h}./fcrackzip.sh${r}"
     sleep 1
     echo ""
     exit 0
