@@ -17,6 +17,7 @@ c="\e[1;36m" # cyan terang
 r="\e[;0m"   # reset
 
 
+# fungsi untuk mengecek apakah kita memiliki koneksi internet atau tidak 
 function cek_koneksi_internet(){
     echo -e "${b}[*] ${p}Mengecek koneksi internet Anda...${r}"
     sleep 3
@@ -31,6 +32,7 @@ function cek_koneksi_internet(){
     fi
 }
 
+# fungsi untuk menginstal depedensi yang diperlukan 
 function instal_depedensi(){
     daftar_depedensi=(
         "fcrackzip"
@@ -38,7 +40,8 @@ function instal_depedensi(){
 
     echo -e "${b}[*] ${p}Menginstal depedensi yang diperlukan.${r}"
     sleep 3
-  
+
+    # menginstal depedensi yang diperlukan menggunakan perulangan for
     for depedensi in "${daftar_depedensi[@]}"; do
         echo -e "${b}[*] ${p}Menginstal ${depedensi}...${r}"
         sleep 3
@@ -47,6 +50,7 @@ function instal_depedensi(){
         sleep 1
     done
 
+    # memberikan izin eksekusi pada script fcrackzip.sh
     chmod +x fcrackzip.sh
 
     echo ""
@@ -60,6 +64,7 @@ function instal_depedensi(){
     exit 0
 }
 
+# fungsi untuk menginstal alat fcrackzip
 function instal_fcrackzip(){
     read -p $'\e[1;37mApakah Anda ingin menginstal alat Fcrackzip [iya/tidak]: ' nanya
 
@@ -74,4 +79,5 @@ function instal_fcrackzip(){
     fi
 }
 
+# memanggil fungsi instal alat fcrackzip
 instal_fcrackzip
