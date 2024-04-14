@@ -37,13 +37,11 @@ function instal_depedensi(){
         "fcrackzip"
     )
 
-    echo ""
     echo -e "${b}[*] ${p}Menginstal depedensi yang diperlukan.${r}"
-    echo "-----------------------------------------"
     sleep 3
   
     for depedensi in "${daftar_depedensi[@]}"; do
-        echo -r "${b}[*] ${p}Menginstal ${depedensi}...${r}"
+        echo -e "${b}[*] ${p}Menginstal ${depedensi}...${r}"
         sleep 3
         apt-get install wget
         echo -e "${h}[+] ${p}${depedensi} berhasil diinstal.${r}"
