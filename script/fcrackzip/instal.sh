@@ -8,14 +8,25 @@
 # + Github      : https://github.com/rofidoang03/sbs
 # ---------------------------------------------------------------
 
+# variabel warna 
+b="\e[1;34m" # biru terang
+m="\e[1;31m" # merah terang 
+h="\e[1;32m" # hijau terang 
+p="\e[1;37m" # putih terang 
+c="\e[1;36m" # cyan terang
+r="\e[;0m"   # reset
+
+
 function cek_koneksi_internet(){
+    echo -e "${b}[*] ${p}Mengecek koneksi internet Anda...${r}"
+    sleep 3
     if ping -q -c 1 -W 1 google.com >/dev/null; then
-        echo "[+] Anda memiliki koneksi internet."
+        echo -e "${h}[+] ${p}Anda memiliki koneksi internet.${r}"
         instal_depedensi
     else
-        echo "[-] Anda tidak memiliki koneksi internet."
+        echo -e "${m}[-] ${p}Anda tidak memiliki koneksi internet.${r}"
         sleep 1
-        echo "[info] Pastikan Anda memiliki koneksi internet untuk menginstal alat Fcrackzip."
+        echo -r "${p}[${c}info${p}] Pastikan Anda memiliki koneksi internet untuk menginstal alat Fcrackzip.${r}"
         exit 1
     fi
 }
@@ -27,41 +38,41 @@ function instal_depedensi(){
     )
 
     echo ""
-    echo "[*] Menginstal depedensi yang diperlukan."
+    echo -e "${b}[*] ${p}Menginstal depedensi yang diperlukan.${r}"
     echo "-----------------------------------------"
     sleep 3
   
     for depedensi in "${daftar_depedensi[@]}"; do
-        echo "[*] Menginstal ${depedensi}..."
+        echo -r "${b}[*] ${p}Menginstal ${depedensi}...${r}"
         sleep 3
         apt-get install wget
-        echo "[+] ${depedensi} berhasil diinstal."
+        echo -e "${h}[+] ${p}${depedensi} berhasil diinstal.${r}"
         sleep 1
     done
 
     chmod +x fcrackzip.sh
 
     echo ""
-    echo "[info] Semua depedensi yang diperlukan berhasil diinstal."
+    echo -e "${p}[${c}info${p}] Semua depedensi yang diperlukan berhasil diinstal.${r}"
     sleep 1
-    echo "[info] Fcrackzip berhasil diinstal."
+    echo -e "${p}[${c}info${p}] Fcrackzip berhasil diinstal.${r}"
     sleep 1
-    echo "[info] Untuk menjalankan ketikkan perintah ./fcrackzip.sh"
+    echo -e "${p}[${c}info${p}] Untuk menjalankan ketikkan perintah ./fcrackzip.sh${r}"
     sleep 1
     echo ""
     exit 0
 }
 
 function instal_fcrackzip(){
-    read -p "Apakah Anda ingin menginstal alat Fcrackzip [iya/tidak]: " nanya
+    read -p $'\e[1;37mApakah Anda ingin menginstal alat Fcrackzip [iya/tidak]: ' nanya
 
     if [[ "${nanya}" == "iya" ]]; then
         cek_koneksi_internet
     elif [[ "${nanya}" == "tidak" ]]; then
-        echo "[-] Proses instalasi dibatalkan."
+        echo -e "${m}[-] ${p}Proses instalasi dibatalkan.${r}"
         exit 1
     else
-        echo "[-] Masukkan salah."
+        echo -e "${m}[-] Masukkan salah.${r}"
         instal_fcrackzip
     fi
 }
