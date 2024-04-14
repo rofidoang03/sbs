@@ -66,6 +66,7 @@ function instal_depedensi(){
 
 # fungsi untuk menginstal alat fcrackzip
 function instal_fcrackzip(){
+    clear    
     read -p $'\e[1;37mApakah Anda ingin menginstal alat Fcrackzip [iya/tidak]: ' nanya
 
     if [[ "${nanya}" == "iya" ]]; then
