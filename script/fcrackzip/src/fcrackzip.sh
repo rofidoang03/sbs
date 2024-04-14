@@ -103,6 +103,7 @@ function crack_the_password(){
 	if [[ "${nanya}" == "iya" ]]; then
 		echo ""
 		echo -e "${b}[*] ${p}Menjalankan alat Fcrackzip...${r}"
+  		echo ""
 		sleep 3
 		fcrackzip -v -u -D -p "${file_wordlist}" "${file_zip}"
 		echo ""
