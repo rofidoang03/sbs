@@ -85,6 +85,7 @@ function serangan_sandi(){
 	echo ""
 	echo -e " ${p}[ ${k}0 ${p}] Kembali ke kategori alat${r}"
 	echo -e " ${p}[ ${k}1 ${p}] Fcrackzip${r}"
+ 	echo -e " ${p}[ ${k}2 ${p}] Johnny${r}"
 	echo -e "${p}[ ${k}99 ${p}] Keluar${r}"
 	echo ""
 
