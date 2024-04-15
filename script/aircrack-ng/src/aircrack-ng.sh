@@ -97,6 +97,7 @@ function crack_the_password(){
         echo ""
         echo -e "${b}[*] ${p}Menjalankan alat Aircrack-ng...${r}"
         echo ""
+        sleep 3
         aircrack-ng -a2 -w "${file_wordlist}" "${file_handshake}"
         echo ""
         echo -e "${p}[${c}info${p}] Proses cracking selesai.${r}"
