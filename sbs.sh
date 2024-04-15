@@ -96,6 +96,8 @@ function serangan_sandi(){
 			pilih_kategori_alat
 		elif [[ "${pass}" == "1" ]]; then
 			bash script/fcrackzip/src/fcrackzip.sh
+   		elif [[  "${pass}" == "2" ]]; then
+     			bash script/johnny/src/johnny.sh
 		elif [[ "${pass}" == "99" ]]; then
 			echo ""
 			echo "[info] Terimakasih telah menggunakan SBS."
