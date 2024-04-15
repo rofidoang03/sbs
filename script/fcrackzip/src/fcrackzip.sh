@@ -97,6 +97,7 @@ function crack_the_password(){
 		echo ""
 		echo -e "${b}[*] ${p}Menjalankan alat Fcrackzip...${r}"
   		echo ""
+    		sleep 3
 		fcrackzip -v -u -D -p "${file_wordlist}" "${file_zip}"
 		echo ""
 		echo -e "${p}[${c}info${p}] Proses cracking selesai.${r}"
