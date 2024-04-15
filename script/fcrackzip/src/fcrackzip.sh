@@ -101,7 +101,7 @@ function crack_the_password(){
 		echo ""
 		echo -e "${p}[${c}info${p}] Proses cracking selesai.${r}"
 		read -p $'\e[1;37m[\e[1;36minfo\e[1;37m] Tekan Enter untuk melanjutkan...\e[0m'
-                exit 0
+                bash sbs.sh
 	elif [[ "${nanya}" == "tidak" ]]; then
 		echo -e "${m}[-] ${p}Proses cracking dibatalkan.${r}"
                 exit 1
