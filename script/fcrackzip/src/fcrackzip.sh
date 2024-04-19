@@ -94,12 +94,15 @@ function pilih_file_wordlist(){
 function crack_the_password(){
 	read -p $'\e[1;37mApakah Anda ingin memulai proses cracking [iya/tidak]: ' nanya
 	if [[ "${nanya}" == "iya" ]]; then
-		echo ""
+	        echo ""
 		echo -e "${b}[*] ${p}Menjalankan alat Fcrackzip...${r}"
-  		echo ""
     		sleep 3
-		fcrackzip -v -u -D -p "${file_wordlist}" "${file_zip}"
-		echo ""
+                password=$(fcrackzip -u -D -p "${file_wordlist}" "${file_zip}" | awk "NR==3")
+                if [[ -z "${password}" ]]; then
+		        echo "[-] PASSWORD NOT FOUND!!!!"
+	        else
+	                echo "[+] ${password}"
+		fi
 		echo -e "${p}[${c}info${p}] Proses cracking selesai.${r}"
 		read -p $'\e[1;37m[\e[1;36minfo\e[1;37m] Tekan Enter untuk melanjutkan...\e[0m'
                 bash sbs.sh
