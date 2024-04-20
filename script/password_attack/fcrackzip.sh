@@ -1,9 +1,5 @@
 #!/bin/bash
 # ------------------------------------------------------------
-# + Alat      : Fcrackzip
-# + Deskripsi : Fcrackzip adalah alat yang digunakan untuk
-#               membobol file zip yang terenkripsi
-#               dengan kata sandi.
 # + Pembuat   : Rofidoang03
 # ------------------------------------------------------------
 # + Github    : https://github.com/rofidoang03/sbs
