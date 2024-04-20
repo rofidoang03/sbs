@@ -58,7 +58,7 @@ function pilih_kategori_alat(){
 		if [[ "${pka}" == "7" ]]; then
 			serangan_sandi
 		else
-			echo "[-] Jenis kategori alat yang Anda pilih tidak tersedia. Silahkan pilih jenis kategori alat yang tersedia"
+			echo "[-] Jenis kategori alat yang Anda pilih tidak tersedia. Silahkan pilih jenis kategori alat yang tersedia."
 			pilih_kategori
 		fi
 	}
@@ -96,16 +96,16 @@ function serangan_sandi(){
 		if [[ "${pass}" == "0" ]]; then
 			pilih_kategori_alat
 		elif [[ "${pass}" == "1" ]]; then
-			bash script/fcrackzip/src/fcrackzip.sh
+			bash script/password_attack/fcrackzip.sh
    		elif [[  "${pass}" == "2" ]]; then
-     			bash script/johnny/src/johnny.sh
+     			bash script/password_attack/johnny.sh
 		elif [[ "${pass}" == "99" ]]; then
 			echo ""
 			echo "[info] Terimakasih telah menggunakan SBS."
 			echo ""
 			exit 0
 		else
-			echo "[-] Alat yang ingin Anda gunakan tidak tersedia. Silahkan pilih alat yang tersedia.."
+			echo "[-] Alat yang ingin Anda gunakan tidak tersedia. Silahkan pilih alat yang tersedia."
 			mass
 		fi
 			
