@@ -102,7 +102,7 @@ function crack_the_password(){
                 # kondisi jika kata sandi file zip tidak ditemukan 
 		if [[ -z "${password}" ]]; then
 		        echo -e "\n${m}[-] ${p}PASSWORD NOT FOUND!!!!${r}\n"
-	        # kondisi jika kata sandi ditemukan 
+	        # kondisi jika kata sandi file zip ditemukan 
 	        else
 	                echo -e "\n${h}[+] ${p}${password}${r}\n"
 		fi
