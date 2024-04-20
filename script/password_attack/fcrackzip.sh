@@ -14,7 +14,7 @@ c="\e[1;36m" # cyan terang
 r="\e[;0m"   # reset
 
 # membersihkan layar terminal
-	clear
+clear
 
 # fungsi mengecek apakah alat fcrackzip sudah terinstal apa belum
 function cek_alat(){
