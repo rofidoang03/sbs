@@ -97,10 +97,10 @@ function crack_the_password(){
                 password=$(fcrackzip -u -D -p "${file_wordlist}" "${file_zip}" | awk "NR==3")
                 # kondisi jika kata sandi file zip tidak ditemukan 
 		if [[ -z "${password}" ]]; then
-		        echo -e "\n${m}[-] ${p}PASSWORD NOT FOUND!!!!${r}\n"
+		        echo -e "${m}[-] ${p}PASSWORD NOT FOUND!!!!${r}\n"
 	        # kondisi jika kata sandi file zip ditemukan 
 	        else
-	                echo -e "\n${h}[+] ${p}${password}${r}\n"
+	                echo -e "${h}[+] ${p}${password}${r}\n"
 		fi
 		echo -e "${p}[${c}info${p}] Proses cracking selesai.${r}"
 		read -p $'\e[1;37m[\e[1;36minfo\e[1;37m] Tekan Enter untuk melanjutkan...\e[0m'
